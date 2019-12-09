@@ -1,0 +1,22 @@
+{
+  "name": "metamask-extension-research",
+  "version": "1.0.0",
+  "description": "MetaMask/[metamask-extension](https://github.com/MetaMask/metamask-extension)\r [releases](https://github.com/MetaMask/metamask-extension/releases) metamask-chrome-7.7.0.zip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHsu/metamask-extension-research.git"
+  },
+  "author": "Jacob Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobHsu/metamask-extension-research/issues"
+  },
+  "homepage": "https://github.com/JacobHsu/metamask-extension-research#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
