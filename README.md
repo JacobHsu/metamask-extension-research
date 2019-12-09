@@ -36,6 +36,17 @@ $ npm install --save-dev gulp-watch gulp-livereload
 Finished 'dev:copy:locales' after 84 ms
 Finished 'dev:copy' after 91 ms
 
+### copyDevTaskNames
+
+locales images contractImages fonts vendor
+app/scripts 整個資料夾 打包成 chromereload.js
+app下的每個html檔全數複製至dist
+app下的每個json檔(只有manifest)複製至dist
+
+#### vendor
+
+內有trezor的溝通  `chrome.runtime.connect
+
 ## Notes
 
 copyDevTaskNames 放入如語系打包工作
@@ -56,3 +67,7 @@ To list available tasks, try running: `gulp --tasks`
 
 使用 `gulp.series()` 來打包任務
 `gulp.parallel()` 能夠在非同步狀態下同時進行此任務
+
+## References
+
+[trezor](https://trezor.io/) Is a secure place that contains one or more currency purses

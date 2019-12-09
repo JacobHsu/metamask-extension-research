@@ -29,6 +29,42 @@ gulp.task('dev:reload', function () {
     source: './app/_locales/',
     destinations: commonPlatforms.map(platform => `./dist/${platform}/_locales`),
   })
+  createCopyTasks('images', {
+    source: './app/images/',
+    destinations: commonPlatforms.map(platform => `./dist/${platform}/images`),
+  })
+
+  createCopyTasks('vendor', {
+    source: './app/vendor/',
+    destinations: commonPlatforms.map(platform => `./dist/${platform}/vendor`),
+  })
+
+  createCopyTasks('css', {
+    source: './ui/app/css/output/',
+    destinations: commonPlatforms.map(platform => `./dist/${platform}`),
+  })
+  
+  createCopyTasks('reload', {
+    devOnly: true,
+    source: './app/scripts/',
+    pattern: '/chromereload.js',
+    destinations: commonPlatforms.map(platform => `./dist/${platform}`),
+  })
+
+  createCopyTasks('html', {
+    source: './app/',
+    pattern: '/*.html',
+    destinations: commonPlatforms.map(platform => `./dist/${platform}`),
+  })
+
+  // copy extension
+
+  createCopyTasks('manifest', {
+    source: './app/',
+    pattern: '/*.json',
+    destinations: browserPlatforms.map(platform => `./dist/${platform}`),
+  })
+  
 
   function createCopyTasks (label, opts) {
     if (!opts.devOnly) {
