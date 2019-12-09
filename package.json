@@ -4,6 +4,7 @@
   "description": "MetaMask/[metamask-extension](https://github.com/MetaMask/metamask-extension)\r [releases](https://github.com/MetaMask/metamask-extension/releases) metamask-chrome-7.7.0.zip",
   "main": "index.js",
   "scripts": {
+    "start": "gulp dev:extension",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/JacobHsu/metamask-extension-research#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "gulp-watch": "^5.0.1"
   }
 }
